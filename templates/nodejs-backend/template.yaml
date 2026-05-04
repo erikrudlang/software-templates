@@ -34,7 +34,6 @@ spec:
       name: Create GitHub Repository
       action: publish:github
       input:
-        allowedHosts: ['github.com']
         repoUrl: github.com?owner=erikrudlang&repo=${{ parameters.name }}
         defaultBranch: main
         sourcePath: ./source
