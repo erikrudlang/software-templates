@@ -1,0 +1,31 @@
+---
+apiVersion: servicebus.azure.com/v1api20211101
+kind: Namespace
+metadata:
+  name: backstage-servicebus-ns
+  namespace: 
+spec:
+  location: northeurope
+  owner:
+    name: backstage-rg
+  sku:
+    name: Standard
+  tags:
+    environment: production
+    application: backstage
+    managed-by: azure-service-operator
+---
+apiVersion: servicebus.azure.com/v1api20211101
+kind: NamespacesTopic
+metadata:
+  name: backstage-topic
+  namespace: 
+spec:
+  owner:
+    name: backstage-servicebus-ns
+  maxMessageSizeInKilobytes: 256
+  defaultMessageTimeToLive: P14D
+  duplicateDetectionHistoryTimeWindow: PT10M
+  enableBatchedOperations: true
+  enablePartitioning: false
+  supportOrdering: true
