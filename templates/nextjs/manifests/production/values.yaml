@@ -1,4 +1,4 @@
-openshift-deployment:
+nginx-deployment:
   image:
     repository: ghcr.io/${{ values.organization }}/${{ values.name }}
     pullPolicy: IfNotPresent
