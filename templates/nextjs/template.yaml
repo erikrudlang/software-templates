@@ -69,7 +69,6 @@ spec:
       action: publish:github
       input:
         repoVisibility: public
-        allowedHosts: ['github.com']
         description: ${{ parameters.description }}
         repoUrl: github.com?owner=${{ parameters.organization }}&repo=${{ parameters.name }}
         defaultBranch: main
@@ -89,7 +88,6 @@ spec:
       name: Create GitOps Manifests Repository
       action: publish:github
       input:
-        allowedHosts: ['github.com']
         description: ${{ parameters.description }}
         repoUrl: github.com?owner=${{ parameters.organization }}&repo=${{ parameters.name }}-manifests
         defaultBranch: main
