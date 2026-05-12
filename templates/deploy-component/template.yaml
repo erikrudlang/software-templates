@@ -64,7 +64,7 @@ spec:
               path: ${{ parameters.environment }}
             destination:
               server: https://kubernetes.default.svc
-              namespace:${{ parameters.component | parseEntityRef | pick('name') }}-${{ parameters.environment }}
+              namespace: ${{ parameters.component | parseEntityRef | pick('name') }}-${{ parameters.environment }}
             syncPolicy:
               syncOptions:
               - CreateNamespace=true
