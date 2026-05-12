@@ -1,6 +1,6 @@
 nginx-deployment:
   image:
-    repository: ghcr.io/${{ values.organization }}/${{ values.name }}
+    repository: acraksdemo.azurecr.io/${{ values.organization }}/${{ values.name }}
     pullPolicy: IfNotPresent
     tag: "main"
 
