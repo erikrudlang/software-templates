@@ -1,0 +1,4 @@
+apiVersion: v2
+name: ${{ values.name }}
+description: Empty Chart
+version: 0.1.0

@@ -1,0 +1,8 @@
+apiVersion: v2
+name: ${{ values.name }}
+description: Deploys a Next.js application using the standard Node.js Chart
+version: 0.1.0
+dependencies:
+  - name: nginx-deployment
+    version: 0.1.0
+    repository: oci://acraksdemo/helm
