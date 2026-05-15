@@ -4,8 +4,6 @@ metadata:
   name: Empty Canvas
   title: Empty Canvas
   description: A blank template to get you started with building your own software templates.
-  title: Next.js deployment
-  description: Bootstraps a Next.js application
 spec:
   owner: platform-engineering
   type: template
